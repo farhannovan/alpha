@@ -1,0 +1,30 @@
+@font-face {
+	font-family: "space";
+	src: url("space-regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "space";
+	src: url("space-bold.woff") format("woff");
+	font-style: normal;
+	font-weight: bold;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "space-mono";
+	src: url("space-mono.woff") format("woff");
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Noto Sans Javanese";
+	src: local("ꦲꦤꦕꦫꦏ"), url("noto2.eot"), url("noto2.eot?#iefix") format("embedded-opentype"),
+		url("noto2.woff") format("woff"), url("noto2.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
