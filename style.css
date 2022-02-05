@@ -220,18 +220,12 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
-    body {
-        overflow: auto;
-    }
     .main-container {
         padding: 0 86px;
     }
 }
 
 @media screen and (max-width: 675px) {
-    body {
-        overflow: auto;
-    }
     .name:hover {
         opacity: 1;
     }
