@@ -140,14 +140,14 @@ ul {
 }
 
 .heading {
-    width: 736px;
+    width: 780px;
     font-size: 48px;
+    letter-spacing: 0.025em;
     color: var(--text-color);
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 96px 0 128px;
-    width: 46rem;
 }
 
 .sub-heading {
@@ -206,6 +206,10 @@ a,
     .wrapper {
         margin: 0 86px;
         padding: 48px 0;
+    }
+    .heading {
+        width: 36rem;
+        font-size: 36px;
     }
     .content {
         max-width: 768px;
