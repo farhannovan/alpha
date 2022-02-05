@@ -9,6 +9,9 @@ body {
     background-color: var(--background-color);
     color: var(--text-color) !important;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 *,
@@ -86,17 +89,14 @@ ul {
 
 /* Content */
 
-.wrapper {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    margin: 0px 172px;
-    padding: 64px 0px;
+.container {
+    padding: 0px 172px;
 }
 
 .header {
+    margin-top: 64px;
+    padding: 0px 172px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -140,14 +140,11 @@ ul {
 }
 
 .heading {
-    width: 736px;
     font-size: 48px;
+    font-weight: normal;
     color: var(--text-color);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 96px 0 128px;
-    width: 46rem;
+    margin-top: 96px;
+    margin-bottom: 128px;
 }
 
 .sub-heading {
@@ -185,11 +182,11 @@ a,
 }
 
 .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    padding: 0px 172px;
     margin-top: auto;
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .socials {
@@ -203,37 +200,37 @@ a,
 }
 
 @media screen and (max-width: 1024px) {
-    .wrapper {
-        margin: 0 86px;
-        padding: 48px 0;
-    }
-    .content {
-        max-width: 768px;
+    .container,
+    .header,
+    .footer {
+        padding: 0 86px;
     }
 }
 
 @media screen and (max-width: 675px) {
-    .wrapper {
-        margin: 0 24px;
-        padding: 32px 0;
+    .container,
+    .header,
+    .footer {
+        padding: 0px 24px;
     }
     .heading {
-        max-width: 327px;
-        padding: 48px 0 56px 0;
-        font-size: 24px;
-        letter-spacing: -0.05em;
+        font-size: 32px;
+        margin: 64px 0;
     }
     .sub-heading {
-        font-size: 16px;
-        margin-bottom: 16px;
+        margin-bottom: 12px;
     }
-    .copy {
-        font-size: 14px;
+    .content {
+        flex-direction: column;
+        gap: 36px;
     }
-    .socials {
+    .footer {
+        margin: 32px 0;
         gap: 24px;
+        flex-direction: column;
     }
-    .social-link {
-        margin-right: 0;
+    .social-link:hover,
+    .email:hover {
+        text-decoration: none;
     }
 }
