@@ -9,6 +9,9 @@ body {
     background-color: var(--background-color);
     color: var(--text-color) !important;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 *,
@@ -180,12 +183,10 @@ a,
 
 .footer {
     padding: 0px 172px;
+    margin-top: auto;
     margin-bottom: 64px;
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 
 .socials {
@@ -207,9 +208,6 @@ a,
 }
 
 @media screen and (max-width: 675px) {
-    /* .name:hover {
-        opacity: 1;
-    } */
     .container,
     .header,
     .footer {
@@ -227,7 +225,8 @@ a,
         gap: 36px;
     }
     .footer {
-        margin-bottom: 32px;
+        margin: 32px 0;
+        gap: 24px;
         flex-direction: column;
     }
     .social-link:hover,
