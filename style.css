@@ -142,7 +142,7 @@ ul {
 }
 
 .heading {
-    width: 780px;
+    /* width: 780px; */
     font-size: 48px;
     letter-spacing: 0.025em;
     color: var(--text-color);
@@ -206,7 +206,7 @@ a,
 
 @media screen and (max-width: 1024px) {
     .heading {
-        width: 36rem;
+        /* width: 36rem; */
         font-size: 36px;
     }
 }
@@ -216,7 +216,7 @@ a,
         padding: 32px 0;
     }
     .heading {
-        width: 21rem;
+        /* width: 21rem; */
         padding: 48px 0 56px 0;
         font-size: 24px;
         letter-spacing: -0.05em;
