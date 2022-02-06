@@ -87,11 +87,13 @@ ul {
 /* Content */
 
 .wrapper {
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    margin: 0px 172px;
+    height: 100vh;
+    width: 1440px !important;
+    max-width: 90% !important;
     padding: 64px 0px;
+    margin: 0 auto;
 }
 
 .header {
@@ -203,10 +205,6 @@ a,
 }
 
 @media screen and (max-width: 1024px) {
-    .wrapper {
-        margin: 0 86px;
-        padding: 48px 0;
-    }
     .heading {
         width: 36rem;
         font-size: 36px;
@@ -217,10 +215,6 @@ a,
 }
 
 @media screen and (max-width: 675px) {
-    .wrapper {
-        margin: 0 24px;
-        padding: 32px 0;
-    }
     .heading {
         max-width: 327px;
         padding: 48px 0 56px 0;
