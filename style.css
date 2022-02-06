@@ -209,14 +209,14 @@ a,
         width: 36rem;
         font-size: 36px;
     }
-    .content {
-        max-width: 768px;
-    }
 }
 
 @media screen and (max-width: 675px) {
+    .wrapper {
+        padding: 32px 0;
+    }
     .heading {
-        max-width: 327px;
+        width: 21rem;
         padding: 48px 0 56px 0;
         font-size: 24px;
         letter-spacing: -0.05em;
