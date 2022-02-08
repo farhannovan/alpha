@@ -39,12 +39,12 @@ ul {
     /* Dark mode */
     --dark-background: #000000;
     --dark-text: #fff;
-    --dark-grey: #8f9ba8;
+    --dark-grey: var(--light-grey);
     /* --dark-grey: #A9A9A9; */
     /* Light Mode */
     --light-background: #fff;
     --light-text: #000;
-    --light-grey: #8f9ba8;
+    --light-grey: var(--light-grey);
     /* --light-grey: #A9A9A9; */
     /* --light-grey: #767676; */
     /* Default */
@@ -162,7 +162,7 @@ ul {
 
 .hero-title .typed {
     padding-bottom: 4px;
-    color: #8f9ba8;
+    color: var(--light-grey);
 }
 
 .hero-title .typed-cursor {
@@ -237,13 +237,9 @@ a,
     .wrapper {
         padding: 32px 0;
     }
-    .heading {
-        /* width: 21rem; */
-        padding: 48px 0 56px 0;
-        font-size: 24px;
-        letter-spacing: -0.05em;
-    }
+    .heading,
     .hero-title {
+        /* width: 21rem; */
         padding: 48px 0 56px 0;
         font-size: 24px;
         letter-spacing: -0.05em;
