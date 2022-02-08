@@ -152,6 +152,27 @@ ul {
     padding: 96px 0 128px;
 }
 
+.hero-title {
+    position: relative;
+    font-size: 48px;
+    /* max-width: 90%; */
+    /* width: 780px; */
+    padding: 96px 0 128px;
+}
+
+.hero-title .typed {
+    padding-bottom: 4px;
+    color: #8f9ba8;
+}
+
+.hero-title .typed-cursor {
+    opacity: 0.4 !important;
+}
+
+.break {
+    display: none;
+}
+
 .sub-heading {
     color: var(--text-grey);
     font-size: 20px;
@@ -205,7 +226,8 @@ a,
 }
 
 @media screen and (max-width: 1024px) {
-    .heading {
+    .heading,
+    .hero-title {
         /* width: 36rem; */
         font-size: 36px;
     }
@@ -220,6 +242,15 @@ a,
         padding: 48px 0 56px 0;
         font-size: 24px;
         letter-spacing: -0.05em;
+    }
+    .hero-title {
+        padding: 48px 0 56px 0;
+        font-size: 24px;
+        letter-spacing: -0.05em;
+    }
+    .break {
+        display: block;
+        width: 100%;
     }
     .sub-heading {
         font-size: 16px;
