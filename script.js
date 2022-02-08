@@ -30,3 +30,17 @@ window.addEventListener("load", () => {
         window.onfocus = function() {
             document.title = 'Farhan Novan | UI/UX Designer & Front-end Developer';
         } */
+
+// Typed headline
+var options = {
+    strings: [
+        "lifelong learner.",
+        "practicing minimalist.",
+        "UI/UX Enthusiast.",
+        // 'sharing my <a class="link" href="/thoughts">thoughts</a>.',
+    ],
+    backDelay: 1800,
+    backSpeed: 20,
+    typeSpeed: 40,
+};
+var typed = new Typed(".typed", options);
