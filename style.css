@@ -39,12 +39,12 @@ ul {
     /* Dark mode */
     --dark-background: #000000;
     --dark-text: #fff;
-    --dark-grey: var(--light-grey);
+    --dark-grey: #8f9ba8;
     /* --dark-grey: #A9A9A9; */
     /* Light Mode */
     --light-background: #fff;
     --light-text: #000;
-    --light-grey: var(--light-grey);
+    --light-grey: #8f9ba8;
     /* --light-grey: #A9A9A9; */
     /* --light-grey: #767676; */
     /* Default */
