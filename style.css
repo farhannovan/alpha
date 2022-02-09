@@ -110,7 +110,7 @@ ul {
 
 .name {
     font-family: "Noto Sans Javanese";
-    font-size: 18px;
+    font-size: 20px;
     opacity: 1;
     transition: opacity 0.4s;
     color: var(--text-color);
@@ -137,8 +137,10 @@ ul {
 
 .content {
     max-width: 930px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
 }
 
 .heading {
@@ -161,7 +163,7 @@ ul {
 }
 
 .hero-title .typed {
-    padding-bottom: 4px;
+    /* padding-bottom: 4px; */
     color: var(--text-grey);
 }
 
@@ -236,6 +238,11 @@ a,
 @media screen and (max-width: 675px) {
     .wrapper {
         padding: 32px 0;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
     }
     .heading,
     .hero-title {
