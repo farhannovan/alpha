@@ -162,7 +162,7 @@ ul {
 
 .hero-title .typed {
     padding-bottom: 4px;
-    color: var(--light-grey);
+    color: var(--text-grey);
 }
 
 .hero-title .typed-cursor {
